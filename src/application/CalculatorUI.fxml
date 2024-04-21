@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="application.CalculatorController">
+   <children>
+      <Label fx:id="lblScreen" alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="400.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="105.0" prefWidth="400.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="8">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: brown; -fx-text-fill: white;" text="+">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="105.0" prefWidth="400.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="6">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: brown; -fx-text-fill: white;" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="105.0" prefWidth="400.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: brown; -fx-text-fill: white;" text="x">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="105.0" prefWidth="400.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processCE" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: white;" text="CE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: gray; -fx-text-fill: yellow;" text="0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: brown; -fx-text-fill: white;" text="=">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="95.0" prefWidth="95.0" style="-fx-background-color: brown; -fx-text-fill: white;" text="/">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
